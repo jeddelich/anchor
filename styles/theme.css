@@ -1,0 +1,18 @@
+@theme {
+  /* ─── Brand ─────────────────────────────────────────── */
+  --color-primary: #4A90E2;   /* soft blue */
+  --color-secondary: #7FB3F5; /* lighter blue */
+  --color-accent: #A7C7E7;    /* muted sky */
+
+  /* ─── Neutral ────────────────────────────────────────── */
+  --color-surface: #FFFFFF;
+  --color-background: #F5F9FF; /* very light blue tint */
+
+  /* ─── Semantic ───────────────────────────────────────── */
+  --color-text: #1F2A44; /* deep navy */
+
+  /* ─── Highlight / Success ───────────────────────────── */
+  --color-highlight: #C2A878;      /* success/completed */
+  --color-highlight-soft: #F4EBDD; /* soft success background */
+  --color-highlight-hover: #D6BE91; /* hover accent */
+}

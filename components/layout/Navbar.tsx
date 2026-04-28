@@ -51,14 +51,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      <div
-        className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 lg:hidden ${
-          isMenuOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
-        }`}
-        onClick={() => setIsMenuOpen(false)}
-        aria-hidden="true"
-      />
-
       <aside
         id="mobile-sidebar-menu"
         className={`fixed inset-y-0 right-0 z-50 h-screen w-72 max-w-[85vw] bg-surface px-6 py-6 shadow-2xl transition-transform duration-300 lg:hidden ${

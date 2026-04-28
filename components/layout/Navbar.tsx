@@ -4,13 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiAnchor, FiMenu, FiX } from "react-icons/fi";
 
+import { navLinks } from "../../data/navLinks";
 import IconButton from "../ui/IconButton";
-
-const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Our Plans", href: "/our-plans" },
-  { label: "Sign In", href: "/sign-in" },
-];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

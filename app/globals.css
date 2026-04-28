@@ -1,2 +1,48 @@
 @import "tailwindcss";
 @import "../styles/theme.css";
+
+.anchor-sink-icon {
+	transform-origin: center top;
+	will-change: transform, opacity;
+}
+
+.group\/brand:hover .anchor-sink-icon {
+	animation: anchor-sink 1350ms both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.group\/brand:hover .anchor-sink-icon {
+		animation-duration: 500ms;
+	}
+}
+
+@keyframes anchor-sink {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+		animation-timing-function: cubic-bezier(0.15, 0.95, 0.24, 1);
+	}
+
+	36% {
+		transform: translateY(18px) rotate(7deg);
+	}
+
+	58% {
+		transform: translateY(20px) rotate(0deg);
+		animation-timing-function: cubic-bezier(0.08, 0.5, 0.18, 1);
+	}
+
+  68% {
+		transform: translateY(22px) rotate(-7deg);
+		animation-timing-function: cubic-bezier(0.08, 0.5, 0.18, 1);
+	}
+
+	78% {
+		transform: translateY(24px) rotate(0deg);
+    animation-timing-function: cubic-bezier(0.08, 0.5, 0.18, 1);
+	}
+	100% {
+		transform: translateY(32px) rotate(0deg);
+		animation-timing-function: cubic-bezier(0.08, 0.5, 0.18, 1);
+	}
+}

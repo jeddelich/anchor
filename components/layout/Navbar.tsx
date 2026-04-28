@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { FiAnchor, FiMenu, FiX } from "react-icons/fi";
 
+import IconButton from "../ui/IconButton";
+
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Our Plans", href: "/our-plans" },
@@ -39,16 +41,15 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <button
-          type="button"
-          className="visible inline-flex items-center justify-center p-2 rounded hover:cursor-pointer text-text transition-colors duration-200 hover:bg-primary/10 lg:hidden"
+        <IconButton
+          className="visible lg:hidden"
           aria-label="Open menu"
           aria-expanded={isMenuOpen}
           aria-controls="mobile-sidebar-menu"
           onClick={() => setIsMenuOpen(true)}
         >
           <FiMenu className="h-5 w-5" aria-hidden="true" />
-        </button>
+        </IconButton>
       </div>
 
       <aside
@@ -60,14 +61,12 @@ export default function Navbar() {
       >
         <div className="mb-8 flex items-center justify-between">
           <span className="text-base font-semibold text-text">Menu</span>
-          <button
-            type="button"
-            className="inline-flex items-center justify-center rounded-md border border-primary/30 p-2 text-text transition-colors duration-200 hover:bg-primary/10"
+          <IconButton
             aria-label="Close menu"
             onClick={() => setIsMenuOpen(false)}
           >
             <FiX className="h-5 w-5" aria-hidden="true" />
-          </button>
+          </IconButton>
         </div>
 
         <ul className="flex flex-col gap-5 text-base font-medium text-text/90">

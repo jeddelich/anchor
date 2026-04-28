@@ -26,12 +26,21 @@ export default function Navbar() {
         <ul className="items-center hidden gap-6 text-sm font-medium text-text/85 md:gap-8 md:text-base lg:flex ">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <Link
-                href={link.href}
-                className="transition-colors duration-200 hover:text-primary"
-              >
-                {link.label}
-              </Link>
+              {link.disabled ? (
+                <span
+                  className="cursor-not-allowed hover:text-text/45"
+                  aria-disabled="true"
+                >
+                  {link.label}
+                </span>
+              ) : (
+                <Link
+                  href={link.href}
+                  className="transition-colors duration-200 hover:text-primary"
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

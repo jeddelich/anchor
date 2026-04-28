@@ -58,7 +58,7 @@ export default function Navbar() {
 
       <aside
         id="mobile-sidebar-menu"
-        className={`fixed inset-y-0 right-0 z-50 h-screen w-72 max-w-[85vw] bg-surface px-6 py-6 shadow-2xl transition-transform duration-300 lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-50 h-screen w-72 max-w-[85vw] bg-surface px-8 py-4 shadow-2xl transition-transform duration-300 lg:hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-hidden={!isMenuOpen}

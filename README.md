@@ -18,7 +18,8 @@ The original motivation for this project came from real-world sidebar issues not
 | --- | --- | --- | --- |
 | P1 | _Describe the issue_ | _What goes wrong for the user?_ | High / Medium / Low |
 | P2 | _Describe the issue_ | _What goes wrong for the user?_ | High / Medium / Low |
-| P3 | _Describe the issue_ | _What goes wrong for the user?_ | High / Medium / Low |
+| P3 | Inconsistent Styling | The burger menu icon is square despite all other page elements being rounded and sidebar icons being circular | High / Medium / Low |
+| P4 | Non-intuitive Elements | Cannot clearly tell the buttons are clickable | High / Medium / Low |
 
 ## Implemented Fixes
 
@@ -28,7 +29,8 @@ Use this section to explain exactly how each problem was solved.
 | --- | --- | --- | --- |
 | P1 | _Implementation summary_ | _Reasoning and expected outcome_ | _Any limitations or follow-up_ |
 | P2 | _Implementation summary_ | _Reasoning and expected outcome_ | _Any limitations or follow-up_ |
-| P3 | _Implementation summary_ | _Reasoning and expected outcome_ | _Any limitations or follow-up_ |
+| P3 | Consistent Styling | fixed x/y menu padding to match navbar better, | 
+| P4 | Intuitive UX/UI Design |  | 
 
 ## Before vs After
 
@@ -43,6 +45,11 @@ Document the visible difference introduced by your solution.
 - Improve sidebar clarity and navigation flow.
 - Reduce layout instability and interaction friction.
 - Ensure behavior is consistent across desktop and mobile.
+
+## What I Kept And Why
+
+- Headspace most likely chose rounded borders intentionally. Squares are aggressive and rigid, circles are relaxing and flexible. 
+- I am assuming the cursor was left as default intentially for non-routing buttons vs the routing buttons so kept that as well.
 
 ## Tech Stack
 

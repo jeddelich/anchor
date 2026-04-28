@@ -13,7 +13,7 @@ export default function IconButton({
   return (
     <button
       type={type}
-      className={`inline-flex items-center justify-center rounded p-2 text-text transition-colors duration-200 hover:cursor-pointer hover:bg-primary/10 ${className}`.trim()}
+      className={`inline-flex items-center justify-center rounded-full p-2 text-text transition-colors duration-200 hover:cursor-pointer hover:bg-primary/10 ${className}`.trim()}
       {...props}
     >
       {children}
